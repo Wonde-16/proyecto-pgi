@@ -9,7 +9,7 @@
 	flex-direction: column;
 	height: 100vh;
 	width: 100%;
-	font-family: 'edition';
+	font-family: 'pavia';
 }
 
 
@@ -50,9 +50,19 @@ nav{
 
 section{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex: 1 1 95%;
+	position: relative;
+}
+
+.texto{
+	background-color: #d3d3d3;
+	position: absolute;
+	top: 20px;
+	padding: 10px;
+	font-size: 40px;
 }
 
 .contenedor{
@@ -61,7 +71,7 @@ section{
 	background-color: black;
 	height: 85%;
 	width: 70%;
-
+	gap: 20px;
 }
 
 .blq1{
@@ -69,6 +79,8 @@ section{
 	flex-direction: row ;
 	width: 45%;
 	height: 45%;
+	gap: 50px;
+	padding: 30px;
 }
 
 .blq2{
@@ -76,6 +88,8 @@ section{
 	flex-direction: row ;
 	width: 45%;
 	height: 45%;
+	gap: 50px;
+	padding: 30px;
 }
 
 @media(max-width:1000px)(

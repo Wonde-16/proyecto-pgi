@@ -39,7 +39,7 @@ header{
 
 .letra{
 	margin: 10px;
-	font-size: 25px;
+	font-size: 15px;
 }
 
 nav{
@@ -67,6 +67,8 @@ section{
 
 	height: 550px;
 	width: 400px;
+
+	margin: 10px;
 
 }
 

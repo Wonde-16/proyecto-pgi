@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*	.contenedor{
+	max-width: 1500px;
+}
+*/
+.contenedo:nth-child{}
+
+header{
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 10%;
+	justify-content: space-between;
+
+	padding: 20px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+
+	gap: 20px;
+
+	font-size: 20px;
+}
+
+.botrojo{
+	height: 40px;
+
+
+	border: red solid 2px;
+}
+
+.botgris{
+	display: flex;
+	flex-direction: row;
+	
+	height: 40px;
+
+	border: grey; solid 2px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center ;
+	align-items: center;
+	flex: 1 1 90%;
+}
+
+.lupa{
+	width: 25px;
+}

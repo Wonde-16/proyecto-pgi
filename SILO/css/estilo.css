@@ -12,7 +12,11 @@ body {
 
 	gap:50px;
 
+}
+
+@font-face{
 	font-family: "Work Sans";
+	src:../fuente/GoogleFonts-WorkSans-Regular.ttf ;
 }
 
 .cabecera {

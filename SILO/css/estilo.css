@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #f7f5ef;
+
+}
+
+.cabecera {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.hamburguesa {
+	display: none;
+	color: #999;
+
+
+}
+
+.izq {
+	display: flex;
+	gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 90%;
+	font-size: 30px;
+	text-align: center;
+}
+div h1{
+	color: #C03F3F;
+	font-size: 100px;
+}
+
+.boton{
+	width: 40%;
+	background-color: #C03F3F;
+	padding: 10px;
+}
+
+section div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	gap: 20px;
+}
+
+@media (max-width: 1000px) {
+	header .hamburguesa {
+		display: inline-flex;
+
+	}
+
+	header .menu {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+
+		top: 0px;
+		left: 0px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+
+	header .izq {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	section{
+		font-size: 15px;
+	}
+
+}
+
+a {
+	text-decoration: none;
+
+}
+
+.Temas {
+	color: #B92326;
+	height: 40px;
+    border-radius: 10px;
+    display: flex;
+    width: 170px;
+    align-items: center;
+    border: 2px solid;
+    justify-content: center;
+}
+
+.Soporte {
+	color: #999;
+
+}
+
+.Blog {
+	color: #999;
+
+}
+
+.ES {
+	color: #999;
+
+}
+
+.EN {
+	color: #999;
+
+}
+
+.Idioma {
+	gap: 15px;
+    display: flex;
+    width: 145px;
+    border: 2px solid #999;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+@font-face{
+	font-family: "Poppins";
+	src: url("../Fuente/Poppins_Complete/Poppins-Medium.otf");
+}
+
+.menu {
+	font-family: "Poppins";
+
+}
+
+.lupa {
+	color: #999;
+
+
+}
+
+.puñetero {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+a.Temas:hover {
+	background-color: #B92326;
+	color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+a.Soporte:hover {
+	background-color: #B92326;
+	color: #f4f4f4;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+
+a.Blog:hover {
+	background-color: #B92326;
+	color: #f4f4f4;
+	background-color: #B92326;
+	color: #f4f4f4;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}

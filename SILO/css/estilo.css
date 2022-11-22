@@ -105,6 +105,15 @@ section{
 	gap: 100px;
 }
 
+
+.ocultar{
+	display: none;
+}
+
+.mostrar{
+	display: flex;
+}
+
 @media (max-width: 1000px) {
 	header .hamburguesa {
 		display: inline-flex;
@@ -114,15 +123,19 @@ section{
 	header .menu {
 		position: absolute;
 		width: 100vw;
-		height: 100vh;
+		height: 90vh;
 
-		top: 0px;
+		bottom: 0px;
 		left: 0px;
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		background-color: #fff;
+
+		di
 
 	}
 
@@ -258,3 +271,5 @@ a.Blog:hover {
 
 
 }
+
+

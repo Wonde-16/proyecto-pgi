@@ -107,7 +107,13 @@ section{
 	gap: 100px;
 }
 
+header .puñetero .ocultar{
+	display: none;
+}
 
+header .puñetero .mostrar{
+	display: flex;
+}
 
 
 @media (max-width: 1000px) {
@@ -142,7 +148,8 @@ section{
 	}
 
 	section{
-		font-size: 15px;
+		font-size: 10px;
+		
 	}
 
 	.parte1{

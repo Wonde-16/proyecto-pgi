@@ -142,7 +142,7 @@ header .puñetero .mostrar{
 	}
 
 	header .izq {
-		display: flex;
+		display: flex ;
 		flex-direction: column;
 
 	}

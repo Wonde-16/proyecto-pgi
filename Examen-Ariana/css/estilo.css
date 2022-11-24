@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+@font-face{
+	font-family: "Oregano";
+	src:../fuente/Oregano-Regular.ttf ;
+} 
+
+body{
+    font-family: "Oregano";
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #f3f3f3;
+
+    position: relative;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+
+    text-align: center;
+}
+
+.parte2{
+    width: 50%; 
+    background-image: url(../img/pexels-rodion-kutsaiev-7911758.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.caja-letras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.caja-iconos{
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+
+    height: 30px;
+    width: 100px;
+
+    gap: 20px;
+}
+
+.iconos{
+    height: 30px;
+}
+
+.l1{
+    font-size: 80px;
+}
+
+.l2{
+    font-size: 40px;
+}
+
+.l3{
+    font-size: 25px;
+
+    background-color: #d9cfc4;
+
+    padding: 5px;
+    width: 40%;
+    
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+dialog::backdrop {
+	background: #A5A5A5;
+    opacity: 0.7;
+}
+
+
+dialog{
+	width: 17%;
+	height: 50%;
+	margin: auto;
+	border: 3px;
+
+    border-radius: 15px;
+    box-shadow: 5px  5px 5px #A5A5A5;
+    
+}
+
+.mod{
+	border-radius: 5px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #d0d0d0;
+
+    gap: 20px;
+
+}
+
+.monalisa{
+
+
+    height: 200px;
+    width:200px;
+}
+
+
+.cora{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+    
+section dialog div.mod div.cora1{
+    background-image: url(../img/me-gusta.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section dialog div.mod div.cora2{
+    background-image: url(../img/corazon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.aceptar{
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+     text-align: center;
+}

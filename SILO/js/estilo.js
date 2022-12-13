@@ -16,23 +16,35 @@ const menu = document.querySelector(".menu");
 
 icono_burger.addEventListener("click", 
       function(){
+ // mostrar y ocultar
 
       // console.log(menu.classList);
-       // menu.classList.add("nuevo")
-       // menu.classList.remove("menu")
-       // console.log(menu.classList);
-       //  console.log(menu.classList.contains("nuevo"));
+      // menu.classList.add("nuevo")
+      // menu.classList.remove("menu")
+      // console.log(menu.classList);
+      //  console.log(menu.classList.contains("nuevo"));
+       
+      //  if (menu.classList.contains("ocultar") == true){
+      //    menu.classList.remove("ocultar")
+      //    menu.classList.add("mostrar")
+      //  }
+      //  else if (menu.classList.contains("mostrar") == true){
+      //      menu.classList.remove("mostrar")
+      //      menu.classList.add("ocultar")
+      //  }
 
-       if (menu.classList.contains("ocultar") == true){
-         menu.classList.remove("ocultar")
-         menu.classList.add("mostrar")
-       }
-       else if (menu.classList.contains("mostrar") == true){
-           menu.classList.remove("mostrar")
-           menu.classList.add("ocultar")
-       }
+      menu.classList.toggle("mostrar")
 
        // div.classList.replace("ocultar", "mostrar");    
        // div.classList.replace("mostrar", "ocultar"); 
      });
 
+
+     const caja_roja = document.getElementById("lupa");
+     console.log(caja-roja);
+
+    // caja_roja.addEventListener("click", 
+    //   function(){ 
+    //   buscar.classList.toggle("buscar-caja")
+
+    //   });

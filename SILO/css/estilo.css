@@ -16,7 +16,7 @@ body {
 
  @font-face{
 	font-family: "Work Sans";
-	src:../fuente/GoogleFonts-WorkSans-Regular.ttf ;
+	src:url("../fuente/GoogleFonts-WorkSans-Regular.ttf") ;
 } 
 
 
@@ -107,12 +107,27 @@ section{
 	gap: 100px;
 }
 
-header .puñetero .ocultar{
-	display: none;
+.buscar{
+	position: absolute;
+	background-color: #B92326;
+	height: 45vh;
+	width: 100vw;
+	 top: -100px; 
 }
 
+.burcar-caja{
+	top:0px;
+}
+
+
+
+/* header .puñetero .ocultar{
+	display: none;
+} */
+
 header .puñetero .mostrar{
-	display: flex;
+	/* display: flex; */
+	clip-path: circle(150% at 0% 0%);
 }
 
 
@@ -137,7 +152,9 @@ header .puñetero .mostrar{
 
 		background-color: #fff;
 
-		di
+		clip-path: circle(0% at 0% 0%);
+
+		transition: all 1.5s ease;
 
 	}
 

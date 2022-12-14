@@ -40,8 +40,17 @@ icono_burger.addEventListener("click",
      });
 
 
-     const caja_roja = document.getElementById("lupa");
-     console.log(caja-roja);
+     const lupa = document.querySelector(".lupa");
+     // console.log(lupa);
+
+     const cuadro= document.querySelector(".cuadro-busqueda")
+
+     lupa.addEventListener("click",
+          function(){
+               console.log("hola");
+               cuadro.classList.toggle("mostrar")
+          }
+     )
 
     // caja_roja.addEventListener("click", 
     //   function(){ 

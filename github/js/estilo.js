@@ -1,7 +1,8 @@
-const modalD = document.getElementById("targeta");
+const tag = document.getElementById("targeta");
+console.log(tag)
 const cora = document.querySelector(".cora");
-
-modalD.addEventListener("click", 
+console.log(cora)
+tag.addEventListener("click", 
       function(){
 
        if (cora.classList.contains("cora1") == true){

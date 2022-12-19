@@ -1,0 +1,105 @@
+body{
+   
+}
+
+.todo{
+    height: 100vh;
+    width: 100vw;
+     background-image: url(../img/mountains-g1d769edc1_640.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5%;
+    border-radius: solid 2px white;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+
+.logotipo-titulo{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+    color:white;
+}
+
+div h1{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.imagen1{
+	height: 60px;
+	width: 60px;
+	border-radius:50%;
+	margin-right: 10px;
+}
+
+.letra{
+	margin: 10px;
+	font-size: 15px;
+    color: white;
+}
+
+
+
+section p{
+    font-size: 50px;
+    color: white;
+}
+
+section a{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.6%;
+
+    background-color: white;
+
+    height: 4%;
+    width: 10%;
+    border-radius: 5px;
+}
+
+.textoBoton{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+    height: 85vh;
+    width: 80vw;
+}
+
+
+
+@media (max-width:1500px){
+    section a{
+        width: 20%;
+    }
+}
+@media (max-width:900px){
+    section p{
+        width: 90%;
+        font-size: 30px;
+    }
+   
+}
+
+@media (max-width:650px){
+    section p{
+        width:50%;
+        font-size: 30px;
+    }
+   
+}

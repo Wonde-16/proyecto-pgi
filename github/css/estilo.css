@@ -117,6 +117,29 @@ section{
 	flex-direction: row;
 }
 
+.cora{
+    width: 20px;
+    height: 20px;
+    
+    top: 10px;
+    right: 30px;
+}
+    
+.cora1{
+    background-image: url(../img/me-gusta.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cora2{
+    background-image: url(../img/corazon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 @media (max-width:1750px){
 	section{
 		flex-direction: column;

@@ -1,5 +1,3 @@
-const tag = document.getElementById("targeta");
-console.log(tag)
 const cora = document.querySelector(".cora");
 console.log(cora)
 tag.addEventListener("click", 

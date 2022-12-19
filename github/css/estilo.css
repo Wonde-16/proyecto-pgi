@@ -141,7 +141,7 @@ section{
 }
 
 
-@media (max-width:1750px){
+@media (max-width:1450px){
 	section{
 		flex-direction: column;
 	}

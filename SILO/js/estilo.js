@@ -40,11 +40,36 @@ icono_burger.addEventListener("click",
      });
 
 
-     const caja_roja = document.getElementById("lupa");
-     console.log(caja-roja);
+     const lupa = document.querySelector(".lupa");
+     // console.log(lupa);
+
+     const cuadro= document.querySelector(".cuadro-busqueda")
+
+     lupa.addEventListener("click",
+          function(){
+               console.log("hola");
+               cuadro.classList.toggle("mostrar")
+          });
 
     // caja_roja.addEventListener("click", 
     //   function(){ 
     //   buscar.classList.toggle("buscar-caja")
 
     //   });
+
+    const cerrar = document.getElementById("xex");
+     // console.log(cerrar);
+
+    const busqueda= document.querySelector(".cuadro-busqueda")
+//     console.log(busqueda);
+
+    cerrar.addEventListener("click",
+         function(){
+          //     console.log("hola");
+          //     busqueda.classList.toggle("cierre")
+          if (busqueda.classList.contains("mostrar") == true){
+                   busqueda.classList.remove("mostrar")
+                   busqueda.classList.add("cierre")
+                 }
+                 
+         });

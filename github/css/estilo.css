@@ -124,7 +124,6 @@ section{
     top: 10px;
     right: 30px;
 }
-
     
 .cora1{
     background-image: url(../img/me-gusta.png);
@@ -141,7 +140,7 @@ section{
 }
 
 
-@media (max-width:1450px){
+@media (max-width:1750px){
 	section{
 		flex-direction: column;
 	}

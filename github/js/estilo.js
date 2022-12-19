@@ -1,10 +1,10 @@
-const tag = document.getElementById("corazon");
-// console.log(tag);
+const tagCora = document.getElementById("corazon");
+console.log(tagCora);
 
 const cora = document.querySelector(".cora");
-// console.log(cora);
+console.log(cora);
 
-tag.addEventListener("click", 
+tagCora.addEventListener("click", 
        function(){
             console.log("hola");
 
@@ -17,3 +17,4 @@ tag.addEventListener("click",
                 cora.classList.add("cora1")
                 }
       });
+

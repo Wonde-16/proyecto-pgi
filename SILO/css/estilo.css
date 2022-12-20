@@ -55,7 +55,8 @@ body {
 	font-size: 30px;
 	text-align: center;
 }
-div h1{
+
+div.titulo h1{
 	color: #B92326;
 	font-size: 100px;
 }
@@ -82,7 +83,7 @@ div h1{
 	flex-direction: row;
 	align-items: flex-start;
 	width: 80%;
-
+	gap: 100px;
 }
 .img3{
 	border-radius: 5px;	
@@ -98,13 +99,17 @@ article{
 }
 
 
-section{
+.todo{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 100px;
+
+	
 }
+
+
 
 .cuadro-busqueda{
 	display: flex;
@@ -366,38 +371,59 @@ ul{
 	height: 20px;
 }
 
+#parte-blog{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+#parte2-blog{
+	width: 80%;
+}
+
 .blog-1{
 	display: flex;
-	flex-direction: row;
-
-	width: 80%;
-}
-
-.blog-2{
-	display: flex;
-	flex-direction: row;
+	justify-content: flex-start;
 	align-items: flex-start;
-	width: 80%;
+	flex-wrap: wrap;
+	gap: 50px;
+
+	width: 100%;
 }
 
-.blog{
-	padding-left: 90px;
+
+
+.t-blog-h{
+	font-size: 30px;
+	padding-bottom: 10px;
 }
 
-.articulo1{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	width: 250%;
-}
+
 
 .entrada1{
 	display: flex;
 	flex-direction: column;
 }
 
+.texto-grande{
+	font-size: 40px;
+}
+
+
+
+
 .texto-b1{
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 35px;
 	width: 20vw;
+	color: #656565;
+}
+
+.texto-b{
+	color: #656565;
 }
 
 article p{
@@ -410,24 +436,97 @@ article a{
 	color: #000;
 }
 
-section section.blog-2 article{
-	width: 50vw;
-	margin: 0px;
-	padding: 0px;
+
+section .blog-1 article{
+	max-width: 30%;
+}
+
+section .blog-1 article:first-child{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 65%;
+}
+
+.a-e1{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.caja-botones{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.botoncitos{
+	height: 25px;
+	width: 100px;
+	padding-top: 2px;
+	font-size: 15px;
+	background-color: #D6D6D6;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.botoncitos:hover{
+	background-color: #B92326;
 }
 
 .parteOne{
 	gap: 20px;
 }
 
+
 @media (max-width: 1500px){
-	.articulo1{
+	.a-e1{
 		flex-direction: column;
 	}
 
 	.texto-b1{
+		height: auto;
 		width: 100%;
 	}
+
+	section .blog-1 article:first-child{
+		max-width: 50vw;
+		transition: width 1.5s ease;
+	}
+	
+}
+
+@media (max-width: 1350px) {
+	section .blog-1 article{
+		max-width: 22vw;
+		transition: width 1.5s ease;
+	}
+
+	section .blog-1 article:first-child{
+		max-width: 22vw;
+		transition: width 1.5s ease;
+	}
+	.texto-grande{
+		font-size: 24px;
+	}
+	
+}
+
+@media (max-width: 1200px) {
+	section .blog-1 article{
+		max-width: 37vw;
+		transition: width 1.5s ease;
+	}
+
+	section .blog-1 article:first-child{
+		max-width: 37vw;
+		transition: width 1.5s ease;
+	}
+	.texto-grande{
+		font-size: 24px;
+	}
+	
 }
 
 @media (max-width: 1000px) {
@@ -455,6 +554,8 @@ section section.blog-2 article{
 	.texto{
 		width: 100%;
 	}
+
+
 
 	.fin{
 		text-align: center;
@@ -507,30 +608,29 @@ section section.blog-2 article{
 		flex-direction: column;
 	}
 
-	.blog-1{
-		flex-wrap: nowrap;
-	}
-	.blog-1{
-		flex-wrap: nowrap;
-	}
+	
 
-	section.blog-1 article{
-		align-items: flex-start;
-		width: 50vw;
-		
-	}
+	
+
+	
 	
 }
 
-@media (max-width: 900px) {
-	.blog-1{
-		flex-direction: column;
+
+@media (max-width: 840px) {
+	section .blog-1 article{
+		max-width:  100%;
+		transition: width 1.5s ease;
 	}
-	.blog-2{
-		flex-direction: column;
-		padding-left: 100px;
+
+	section .blog-1 article:first-child{
+		max-width: 100%;
+		transition: width 1.5s ease;
 	}
+
 }
+
+
 
 @media (max-width: 600px) {
 	.parte1{

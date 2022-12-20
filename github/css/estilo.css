@@ -1,8 +1,6 @@
-https://www.behance.net/gallery/151503031/DUMAS-Conociendo-Atacama
-
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -11,6 +9,8 @@ https://www.behance.net/gallery/151503031/DUMAS-Conociendo-Atacama
 	flex-direction: column;
 	height: 100vh;
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 
@@ -83,7 +83,8 @@ section{
 }
 
 .targeta:hover{
-	padding: 10px;
+	position: relative;
+	top:-30px
 }
 
 .inst{
@@ -102,11 +103,31 @@ section{
 }
 
 .footerT{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
 	height: 50px;
 	width: 80%;
 
 	margin: 30px;
 	border-top: solid 1px grey;
+}
+
+.botoncito{
+	height: 25px;
+	width: 100px;
+	padding: 10px;
+	padding-top: 5px;
+	font-size: 15px;
+	background-color: #D6D6D6;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.botoncito:hover{
+	background-color: #ADADAD;	
 }
 
 .h11{
@@ -118,11 +139,12 @@ section{
 }
 
 .cora{
-    width: 20px;
-    height: 20px;
+	position: absolute;
+    width: 25px;
+    height: 25px;
     
-    top: 10px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
 }
     
 .cora1{
@@ -137,6 +159,32 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+footer{
+	height: 40vh;
+	width: 100vw;
+	background-color: #D68C66;
+
+	gap: 20px;
+	padding-left: 100px;
+}
+
+footer p{
+	color: white;
+}
+
+.rrss li img{
+	width: 20px;
+}
+.rrss {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+ul{
+	list-style: none;
 }
 
 

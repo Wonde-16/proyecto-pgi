@@ -1,4 +1,4 @@
-const tagCora = document.getElementById("corazon");
+const tagCora = document.querySelector(".cora");
 console.log(tagCora);
 
 const cora = document.querySelector(".cora");
@@ -18,3 +18,7 @@ tagCora.addEventListener("click",
                 }
       });
 
+
+ // corazones
+ const corazones = document.querySelectorAll(".cora");
+ console.log(corazones)

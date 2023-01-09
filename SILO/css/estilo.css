@@ -216,10 +216,12 @@ header .puñetero .mostrar{
 	
 	border: #B92326 2px solid;
 	border-radius: 30px;
+	padding: 4px;
 	
 }
 
 .ball{
+	position:absolute;
 	height: 22px;
 	width: 22px;
 	background-color: rgb(131, 131, 131);

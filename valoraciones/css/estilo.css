@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    width: 28%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+
+    position: relative;
+    
+}
+
+.caja{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    
+}
+
+.caInterior{
+    width: 100vw;
+    display: flex;
+    flex-direction: row; 
+    gap: 150px;
+    padding-left: 50px;
+    transition: all 1s ease;
+
+}
+
+.posicion1{
+    transform: translateX(-550px);
+}
+
+.imagen{
+    width: 150px;
+    height: 150px; 
+    
+}
+
+.c1{
+    background-image: url(../img/cara-feliz.png);
+    background-size: cover;
+}
+
+.c2{
+    background-image: url(../img/cara-feliz\ \(1\).png);
+    background-size: cover;
+}
+
+.tex{
+    padding: 20px;
+    background-color: rgba(176, 176, 176, 0.4);
+    border-radius: 20px;
+}
+
+
+.cajaEstre{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cajaEstre i{
+    font-size: 30px;
+    color: rgb(255, 255, 61);
+}
+
+.cajaBoton{
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
+
+.cajaBoton div{
+    width: 15px;
+    height: 5px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.boton1{
+    
+    background-color: rgb(162, 62, 255);
+}
+
+.boton2{
+    background-color: rgb(87, 87, 87);
+}

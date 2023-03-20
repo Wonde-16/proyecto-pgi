@@ -1,0 +1,66 @@
+:root{
+    --color-amarillo: yellow;
+    --color-rosa: rgb(236, 112, 157);
+    --color-morado: rgb(207, 117, 255);
+    --color-turquesa: rgb(142, 255, 247);
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.tarjeta{
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    height: 50%;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.tarjeta:hover{
+    width: 40%;
+    
+}
+
+.fondo{
+    background-image: url(../img/flowers-g614e9958d_1280.jpg);
+    transition: all ease 0.5s;
+}
+
+.fondo:hover{
+    background-image: url(../img/hd-wallpaper-gc5e282ce6_1280.jpg);
+  
+}
+
+.fondo h1{
+    font-size: 50px;
+    opacity: 0;
+}
+
+.textoAbierto{
+    opacity: 1;
+}
+
+
+.fondo i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.fondo:hover i{
+    opacity: 1;
+    
+}

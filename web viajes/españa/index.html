@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+	<link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <div> <img src="./img/diseno-logotipo-agencia-viajes-avion.jpg"></div>
+    
+        <nav>
+            <ul>
+                <li>Products</li>
+                <li>About</li>
+                <li>My account</li>
+                <li>Cart(0)</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="migas">
+        <a href="#">Home</a> 
+        <span>/</span>
+        <a href="#">viajes</a> 
+        <span>/</span>
+        <a href="#">nueva york</a> 
+    </section>
+    <section class="primera-entrada">
+        <article> 
+            <div class="parte1">
+                <img onclick="window.modal.showModal();"  class="imagen-primera" src="./img/españa/pexels-luis-quintero-14366476.jpg">
+                <div class="tres-imagenes">
+                    <img onclick="window.modal.showModal();"  class="imagen-segunda" src="./img/españa/pexels-luis-quintero-14366476.jpg">
+                    <img onclick="window.modal.showModal();"  class="imagen-segunda" src="./img/españa/pexels-sergio-scandroglio-14167711.jpg">
+                    <img onclick="window.modal.showModal();"  class="imagen-segunda" src="./img/españa/pexels-yosy-rahav-13759651.jpg ">  
+                </div>
+            </div>
+            <div class="parte2">
+                <div class="texto-grande">
+                    <h1>España</h1>         
+                    <h2>1100$</h2>
+                </div>
+                <div class="texto-parrafo">
+                    <p>España, país de la península ibérica de Europa, incluye 17 regiones autónomas con diversas características geográficas y culturales. En Madrid, su capital, se encuentra el Palacio Real y el Museo del Prado, que alberga obras de maestros europeos. Segovia tiene un castillo medieval (el Alcázar) y un acueducto romano intacto.  ​</p>
+                    <p> La capital de Cataluña, Barcelona, se caracteriza por las obras modernistas extravagantes de Antoni Gaudí, como el templo de la Sagrada Familia.</p>
+                </div>
+                <a class="boton" href="#">Comprar</a>
+            </div>
+        </article>
+    </section>
+    
+    <section class="mas-entradas">
+        <h2>Te puede interesar</h2>
+        <div>
+            <article>
+                <img src="./img/londres/hd-wallpaper-g9513d8937_1920.jpg">
+                <a href="../londres/index.html">Londres</a>
+                <p>1500$</p>
+            </article>
+            <article>
+                <img src="./img/irlanda/castle-g0968df5a4_1920.jpg">
+                <a href="../irlanda/index.html">Irlanda</a>
+                <p>1300$</p>
+            </article>
+            <article>
+                <img src="./img/paris/eiffel-tower-g10bc2461d_1920.jpg">
+                <a href="../paris/index.html">paris</a>
+                <p>1600$</p>
+            </article>
+            <article>
+                <img src="./img/portugal/pexels-lisa-fotios-1534560.jpg">
+                <a href="../portugal/index.html">Portugal</a>
+                <p>1300$</p>
+            </article>
+            <article>
+                <img src="./img/nueva-york/george-washington-bridge-g262f85914_1920.jpg">
+                <a href="../nueva york/index.html">Nueva york</a>
+                <p>1500$</p>
+            </article>
+        </div>
+    </section>
+
+    <dialog  id="modal">
+        <div class="mod">
+            <a class="cierre" onclick="window.modal.close();" href="#">X</a>
+            <div class="pasar-der"></div>
+            <div class="pasar-izq"></div>
+        </div>
+    </dialog>
+
+    <script src="js/estilo.js"></script>
+</body>
+</html>

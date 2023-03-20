@@ -1,0 +1,140 @@
+:root{
+	--color-azul: #0195FF;
+    --color-rosa: #FF0066;
+    --color-amarillo:#FFB600;
+    --color-blanco:#ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+/* RRSS */
+
+.rrss{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    width:30px;
+    height: 70px;
+
+    z-index: -1;
+}
+
+.fyi{
+    width: 100%;
+}
+
+
+/* CAJAS IZQ */
+
+.cajas-izq{
+    display: flex;
+    flex-direction: column;
+    width: 3%;
+}
+
+.colores{
+    height: 33.3vh;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.colores div{
+    position: relative;
+    position: absolute;
+    height: 100%; 
+    width: 100%; 
+}
+
+.colores div.amplia{
+    width: 100vw;
+}
+
+.azul{
+    background-color:var(--color-azul) ;
+    transition: all 0.8s ease-out;
+}
+
+.rosa{
+    background-color:var(--color-rosa) ;
+    transition: all 0.8s ease-out;
+} 
+
+.amarillo{
+    background-color:var(--color-amarillo) ;
+    transition: all 0.8s ease-out;
+} 
+
+
+/* cerrar  */
+
+
+.abre{
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;  
+}
+
+.cierre{
+    opacity: 1;
+}
+
+.abre img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* articulos */
+
+article{
+    background-color:  var(--color-blanco);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px;
+
+    padding: 20px;
+
+    height: 40%;
+    width: 20%;
+
+    position: absolute;
+    top: 30%;
+
+    opacity: 0;
+}
+
+.articulosAbierto{
+}
+
+.articulo1{
+    left: 10%;
+}
+
+.articulo2{
+    left: 40%;
+}
+
+.articulo3{
+    right: 10%;
+}

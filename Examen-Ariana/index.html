@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Te gusta el arte</title>
+	<link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+	<section>
+		<div class="parte1"> 
+			<div class="caja-letras">
+				<p class="l1"> ¿Te gusta el arte?</p>
+				<p class="l2">Descubre un cuadro cada día</p>
+				<a onclick="window.modal.showModal();" href="#" class="l3"> Ver</a>
+			</div>
+			<div class="caja-iconos">
+				<img class="iconos" src="img/facebook.png">
+				<img class="iconos" src="img/logotipo-de-instagram.png">
+				<img class="iconos" src="img/twitter.png">
+			</div>
+		</div>
+
+		<div class="parte2"> </div>
+
+
+		<dialog id="modal">
+			<div class="mod">
+				<div class=" cora cora1"></div>
+				<img class="monalisa" src="img/mona-lisa.png">
+				<p>La Gioconda</p>
+				<a onclick="window.modal.close();" href="#" class="aceptar">Aceptar</a>
+			</div>
+		</dialog>
+	</section>	
+	<script src="js/estilo.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    width: 20%;
+    height: 50%;
+    background-image: url(../img/flowers-g614e9958d_1280.jpg);
+    position: relative;
+    
+    
+}
+
+.overlay{
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    
+}
+
+.imagen:hover > .overlay{
+    opacity: 0.3;
+}
+
+.tex1{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+
+
+}
+
+.tex2{
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-size: 100px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+
+.imagen:hover .tex1{
+    top: 10px;
+    opacity: 1;
+}
+
+.imagen:hover .tex2{
+    bottom: 10px;
+    opacity: 1;
+}

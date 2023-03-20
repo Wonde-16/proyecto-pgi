@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+	<link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <div> <img src="./img/diseno-logotipo-agencia-viajes-avion.jpg"></div>
+    
+        <nav>
+            <ul>
+                <li>Products</li>
+                <li>About</li>
+                <li>My account</li>
+                <li>Cart(0)</li>
+            </ul>
+            
+        </nav>
+        <img class="hamb" src="./img/menu (2).png">
+    </header>
+    <section class="migas">
+        <a href="#">Home</a> 
+        <span>/</span>
+        <a href="#">viajes</a> 
+        <span>/</span>
+        <a href="#">nueva york</a> 
+    </section>
+    <section class="primera-entrada">
+        <article> 
+            <div class="parte1">
+                <img onclick="window.modal.showModal();"  class="imagen-primera" src="./img/nueva-york/brooklyn-bridge-g027c25a62_1920.jpg">
+                <div class="tres-imagenes">
+                    <img class="imagen-segunda im1" src="./img/nueva-york/chinatown-g92097fcf3_1920.jpg">
+                    <img class="imagen-segunda im2" src="./img/nueva-york/george-washington-bridge-g262f85914_1920.jpg">
+                    <img class="imagen-segunda im3" src="./img/nueva-york/usa-g1a3785d62_1920.jpg">  
+                </div>
+            </div>
+            <div class="parte2">
+                <div class="texto-grande">
+                    <h1>Nueva york</h1>
+                    <h2>1000$</h2>
+                </div>
+                <div class="texto-parrafo">
+                    <p>París es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia, constituye el único departamento unicomunal del país. La ciudad de París, dentro de sus estrechos límites administrativos, tiene una población de 2 273 305 habitantes en 2015.​</p>
+                    <p>Conocida también como la «Ciudad de la Luz» (en francés, Ville lumière), es el destino turístico más visitado del mundo, con más de 42 millones de visitantes extranjeros por año.9​ Entre los monumentos de la ciudad figuran la Torre Eiffel, la Catedral de Notre Dame</p>
+                </div>
+                <a class="boton" href="#">Comprar</a>
+            </div>
+        </article>
+    </section>
+    
+    <section>
+        <h2>Te puede interesar</h2>
+    </section>
+
+    <section class="mas-entradas"> 
+        <div class="x">
+            <article>
+                <img src="./img/londres/hd-wallpaper-g9513d8937_1920.jpg">
+                <a href="../londres/index.html">Londres</a>
+                <p>1500$</p>
+            </article>
+            <article>
+                <img src="./img/irlanda/castle-g0968df5a4_1920.jpg">
+                <a href="../irlanda/index.html">Irlanda</a>
+                <p>1300$</p>
+            </article>
+            <article>
+                <img src="./img/paris/eiffel-tower-g10bc2461d_1920.jpg">
+                <a href="../paris/index.html">paris</a>
+                <p>1600$</p>
+            </article>
+            <article>
+                <img src="./img/españa/pexels-luis-quintero-14366476.jpg">
+                <a href="../españa/index.html">España</a>
+                <p>1100$</p>
+            </article>
+            <article>
+                <img src="./img/portugal/pexels-lisa-fotios-1534560.jpg">
+                <a href="../portugal/index.html">Portugal</a>
+                <p>1300$</p>
+            </article>
+            <article>
+                <img src="./img/portugal/pexels-lisa-fotios-1534560.jpg">
+                <a href="../portugal/index.html">Portugal</a>
+                <p>1300$</p>
+            </article>
+        </div>
+    </section>
+
+    <dialog  id="modal">
+        <div class="mod">
+            <a class="cierre" onclick="window.modal.close();" href="#">X</a>
+            <div class="pasar-der"></div>
+            <div class="pasar-izq"></div>
+        </div>
+    </dialog>
+
+    <script src="js/estilo.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

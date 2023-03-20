@@ -1,0 +1,302 @@
+/* AFECTA A TODO*/
+
+:root{
+	--color-blanco:#f7f5ef;
+    --color-negro:#000;
+    --color-gris:#3c3c3c;
+    --color-gris-claro:#808080;
+	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-negro) ;
+}
+
+section{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* AFECTA A HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 10%;
+    justify-content: space-between;
+
+    width: 100vw;
+
+    padding-left: 35px;
+
+    border-bottom: solid 2px var(--color-gris);
+}
+
+header div img{
+    width: 15%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+
+    width: 100%;
+
+    gap: 10%;
+
+    font-size: 1.2vw;
+}
+
+/* AFECTA A MIGAS */
+
+.migas{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+
+    padding-top: 20px;
+    padding-bottom:20px ;
+
+    font-size: 1.2vw;
+}
+
+/* AFECTA A SECTION  */
+
+section.primera-entrada article{
+    display: flex;
+    flex-direction: row;
+}
+
+article div.parte1{
+    width: 52%;
+}
+
+.imagen-primera{
+    width: 100%;
+}
+
+.imagen-segunda{
+    width: 33%;
+}
+.tres-imagenes{
+    display: flex;
+    justify-content: space-between;
+}
+
+article div.parte2{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 55%;
+    
+    padding: 1.5%;
+    padding-top: 0%;
+}
+
+.texto-grande{
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    height: 30%;
+
+    font-size: 2vw;
+}
+
+.texto-parrafo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    font-size: 1.7vw;
+}
+
+.boton{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+
+    width: 40%;
+    font-size: 2vw;
+    text-align: center;
+
+    padding: 2%;
+}
+
+.mas-entradas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    padding-top: 50px;
+}
+
+.mas-entradas div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.mas-entradas div
+
+.mas-entradas article{
+    display: flex;
+    flex-direction: column;
+
+    width: 12%;
+}
+
+.mas-entradas article img{
+    height: 20vw;
+    background-image: cover;
+}
+
+.mas-entradas article a{
+    font-size: 23px;
+}
+
+
+.mas-entradas p{
+    font-size: 18px;
+}
+
+
+/* AFECTA A EL DOALOG */
+
+dialog{
+    width: 60vw;
+    height: 70vh;
+
+    margin: auto;
+
+    border: 0;
+}
+
+dialog:backdrop{
+    background: var(--color-gris);
+}
+
+.mod{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/paris/arch-gfaf48bb39_1920.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+    position: relative;
+}
+
+.cierre{
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    color: var(--color-blanco);
+    padding: 20px;
+    border: 0;
+    outline: unset;
+}
+
+.pasar-der{
+    position: absolute;
+    right: 0px;
+    width: 15%;
+    height: 100%;
+}
+
+.pasar-der:hover{
+    background-color: var(--color-gris-claro);
+    opacity: 0.5;
+}
+
+.pasar-izq{
+    position: absolute;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+}
+
+.pasar-izq:hover{
+    background-color: var(--color-gris-claro);
+    opacity: 0.5;
+}
+
+@media (max-width: 1700px) {
+    dialog{
+        width: 50vw;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 1400px) {
+    dialog{
+        width: 45vw;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    dialog{
+        width: 50vw;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 800px) {
+    dialog{
+        width: 60vw;
+        height: 30vh;
+    }
+
+    section.primera-entrada article{
+        flex-direction: column;
+    }
+
+    .texto-parrafo{
+        font-size: 2.5vw;
+    }
+
+    article div.parte1{
+        width: 100%;
+    }
+
+    article div.parte2{
+        height: 25vh;
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+    .mas-entradas div{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mas-entradas article{
+        width: 100%;
+    }
+
+    .texto-parrafo{
+        font-size: 3vw;
+    }
+}
